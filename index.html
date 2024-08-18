@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="labels flex">
+        <div class="turns">Turns: 0</div> 
+        <h4 id="category-name"></h4>
+        <div class="timer flex">60</div>
+    </div>
+    <div class="wrapper">
+        <div class="emoji-name"></div> <!-- Emoji name display -->
+        <ul class="cards"></ul> <!-- Cards will be generated here -->
+    </div>
+    <button class="reshuffle">Reshuffle</button>
+    
+    <div class="feedback" style="display: none;">
+        <p id="feedback-message">Time is up! You didn't finish the game.</p>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
